@@ -88,3 +88,16 @@ note_string_ops
    dirname : It will delete any suffix beginning with the last slash character and return the result
 note_path
 
+<<note_io
+read -p "enter your name: " name
+echo "your name in caps : ${name^^}"
+
+read -p "enter your other name: " name
+echo `${REPLY}`
+note_io
+
+echo "first command line arg - $0"
+echo "second command line arg - ${1}"
+echo "total count - $#"
+echo "all cla - $@"
+echo "all cla - $*"
